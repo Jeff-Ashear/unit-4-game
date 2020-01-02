@@ -11,3 +11,12 @@ h1 {
     text-align: center;
     padding: 8px;
 }
+
+body {
+    background-image: url("assets/images/qbkls.png");
+    background-repeat: space;
+}
+
+#randomNumberField {
+    background-image: src=
+}
