@@ -13,10 +13,45 @@ h1 {
 }
 
 body {
-    background-image: url("assets/images/qbkls.png");
-    background-repeat: space;
+    background-image: url("/assets/images/qbkls.png");
+    background-repeat: repeat;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
 }
 
 #randomNumberField {
-    background-image: src=
+    color: lightsalmon;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: burlywood;
+    background-image: url("/assets/images/memphis-mini-dark.png");
+    background-repeat: repeat;
+}
+
+#scoreCard {
+    border-style: ridge;
+    border-width: 10px;
+    border-color: blue;
+    background-image: url("/assets/images/what-the-hex-dark.png");
+    background-repeat: repeat;
+    margin-bottom: 10px;
+}
+
+#crystalMenu {
+    border-style: ridge;
+    border-width: 16px;
+    border-color: purple;
+    background-image: url(/assets/images/what-the-hex-dark.png);
+    background-repeat: repeat;
 }
