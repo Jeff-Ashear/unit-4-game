@@ -54,12 +54,13 @@ h3 {
     border-color: purple;
     background-image: url(/assets/images/what-the-hex-dark.png);
     background-repeat: repeat;
+    margin-bottom: 10px
 }
 
 
 .img-wrapper {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 10 0;
 }
 
 .img-responsive {
@@ -75,4 +76,13 @@ h3 {
     /* height: 250px;
     width: 250px; */
     margin: 10px;
+}
+
+#userNumberField {
+    color: lightsalmon;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: burlywood;
+    background-image: url("/assets/images/papyrus-dark.png");
+    background-repeat: repeat;
 }
