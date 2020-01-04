@@ -70,12 +70,22 @@ $("#rainbowCrystal").click(function() {
 })
 
 $("#clearCrystal").click(function() {
-    userNumber += clearCrystalNumber;
+    //use this code in the final draft: userNumber += clearCrystalNumber;
+
+
+    //below is code to test win conditions easily
+    userNumber += randomNumber;
+
     $("#showUserNumber").text(userNumber);
+
 })
 
 
-// when the user clicks a button, its value is added to the total
+// function winConditions {
+//     if (userNumber = randomNumber) {
+//         prompt("You Win!")
+//     }
+// };
 
 //each time a button is clicked, a check is performed to see if the number matches or
 // exceeds the random number
