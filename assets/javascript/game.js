@@ -52,11 +52,25 @@ function clearCrystalRange(min, max) {
 }
 console.log("Clear: " + clearCrystalNumber);
 
-// wire up buttons
-//variable to store user's addition
+// wire up buttons to add user input to the userNumber variable and check win conditions.
 
 $("#blueCrystal").click(function() {
     userNumber += blueCrystalNumber;
+    $("#showUserNumber").text(userNumber);
+})
+
+$("#purpleCrystal").click(function() {
+    userNumber += purpleCrystalNumber;
+    $("#showUserNumber").text(userNumber);
+})
+
+$("#rainbowCrystal").click(function() {
+    userNumber += rainbowCrystalNumber;
+    $("#showUserNumber").text(userNumber);
+})
+
+$("#clearCrystal").click(function() {
+    userNumber += clearCrystalNumber;
     $("#showUserNumber").text(userNumber);
 })
 
