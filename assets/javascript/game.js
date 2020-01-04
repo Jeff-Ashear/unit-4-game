@@ -9,14 +9,57 @@ function randomRange(min, max) {
 }
 console.log(randomNumber);
 
-//show the random number
+//show the random number and the starting user number
 
+var userNumber = 0;
 $("#showRandomNumber").text(randomNumber);
+$("#showUserNumber").text(userNumber);
 
 // computer generates a random number for each crystal between 1 and 12. 
 //these numbers remain invisisble
 
+var buttonBottom = 1
+var buttonTop = 12
+var buttonTopOdd = 5
+
+var blueCrystalNumber = blueCrystalRange(buttonBottom, buttonTop);
+
+function blueCrystalRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log("Blue: " + blueCrystalNumber);
+
+var purpleCrystalNumber = purpleCrystalRange(buttonBottom, buttonTopOdd);
+
+function purpleCrystalRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+purpleCrystalNumber = purpleCrystalNumber * 2 + 1;
+
+console.log("Purple: " + purpleCrystalNumber);
+
+var rainbowCrystalNumber = rainbowCrystalRange(buttonBottom, buttonTop);
+
+function rainbowCrystalRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log("Rainbow: " + rainbowCrystalNumber);
+
+var clearCrystalNumber = clearCrystalRange(buttonBottom, buttonTop);
+
+function clearCrystalRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log("Clear: " + clearCrystalNumber);
+
 // wire up buttons
+//variable to store user's addition
+
+$("#blueCrystal").click(function() {
+    userNumber += blueCrystalNumber;
+    $("#showUserNumber").text(userNumber);
+})
+
 
 // when the user clicks a button, its value is added to the total
 
