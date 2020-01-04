@@ -1,7 +1,20 @@
 // computer generates random number between 19 and 120
-$(Math.floor(Math.random))
-    // computer generates a random number for each crystal between 1 and 12. 
-    //these numbers remain invisisble
+var bottomRange = 19
+var topRange = 120
+
+var randomNumber = randomRange(bottomRange, topRange);
+
+function randomRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log(randomNumber);
+
+//show the random number
+
+$("#showRandomNumber").text(randomNumber);
+
+// computer generates a random number for each crystal between 1 and 12. 
+//these numbers remain invisisble
 
 // wire up buttons
 
