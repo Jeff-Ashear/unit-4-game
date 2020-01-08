@@ -69,7 +69,12 @@ $("#blueCrystal").click(function() {
 })
 
 $("#purpleCrystal").click(function() {
-    userNumber += purpleCrystalNumber;
+    //use this code in final draft:
+    // userNumber += purpleCrystalNumber;
+
+    //below is code to test loss conditions easily
+    userNumber = randomNumber + 1
+    
     $("#showUserNumber").text(userNumber);
     console.log("userNumber: " + userNumber);
     winConditions();
@@ -106,18 +111,50 @@ function winConditions() {
     if (userNumber = randomNumber) {
         console.log("You Win!!");
         console.log("wins: " + wins);
-        var again = confirm("You Win! Try again?");
-            if (again == true) {
+        var againW = confirm("You win! Try again?");
+            if (againW == true) {
                 wins = wins + 1;
                 $("#wins").text(wins);
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
+                //fix call to randomRange Function
                 randomRange(min, max);
                 $("#showRandomNumber").text(randomNumber);
                 console.log("random number: " +randomNumber)
 
+            } else {
+                wins = 0
+                $("#wins").text(wins);
+                losses = 0
+                $("#losses").text(losses);
+                userNumber = 0
+                $("#showUserNumber").text(userNumber);
+                //fix call to randomRange Function
+                randomRange(min, max);
             }
 
+    } else {
+        if (userNumber > randomNumber) {
+            console.log("You Lose!!");
+            console.log("losses: " + losses);
+            var againL = confirm("You loose! Try again?");
+            if (againL == true) {
+                losses = losses + 1;
+                $("#losses").text(losses);
+                userNumber = 0
+                $("#showUserNumber").text(userNumber);
+                //call randomRange function here
+            }else {
+                wins = 0
+                $("#wins").text(wins);
+                losses = 0
+                $("#losses").text(losses);
+                userNumber = 0
+                $("#showUserNumber").text(userNumber);
+                //fix call to randomRange Function
+                randomRange(min, max);
+            }
+        }
     }
 };
 
