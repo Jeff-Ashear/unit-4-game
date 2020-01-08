@@ -50,6 +50,14 @@ h3 {
     background-image: url("/assets/images/what-the-hex-dark.png");
     background-repeat: repeat;
     margin-bottom: 10px;
+    }
+
+#wins {
+    color: green;
+}
+
+#losses {
+    color: red;
 }
 
 #crystalMenu {
