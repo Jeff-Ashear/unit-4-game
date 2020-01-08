@@ -12,6 +12,7 @@ console.log(randomNumber);
 //show the random number and the starting user number
 
 var userNumber = 0;
+console.log(userNumber);
 $("#showRandomNumber").text(randomNumber);
 $("#showUserNumber").text(userNumber);
 
@@ -70,19 +71,28 @@ $("#rainbowCrystal").click(function() {
 })
 
 $("#clearCrystal").click(function() {
-    //use this code in the final draft: userNumber += clearCrystalNumber;
+    //use this code in the final draft:
+    userNumber += clearCrystalNumber;
 
 
     //below is code to test win conditions easily
-    userNumber += randomNumber;
+    // userNumber += randomNumber;
 
     $("#showUserNumber").text(userNumber);
 
 })
 
+// if (userNumber = randomNumber) {
+//     console.log("You win")
+// }
+// console.log(userNumber);
+
+
+
 
 // function winConditions {
 //     if (userNumber = randomNumber) {
+//         console.log("You Win!!")
 //         prompt("You Win!")
 //     }
 // };
