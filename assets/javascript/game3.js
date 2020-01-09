@@ -118,6 +118,8 @@ function winConditions() {
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
                 //fix call to randomRange Function
+                // randomRange();
+                randomNumber = randomRange(bottomRange, topRange);
                 randomRange();
                 $("#showRandomNumber").text(randomNumber);
                 console.log("random number: " +randomNumber)
