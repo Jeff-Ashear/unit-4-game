@@ -118,7 +118,7 @@ function winConditions() {
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
                 //fix call to randomRange Function
-                randomRange(min, max);
+                randomRange();
                 $("#showRandomNumber").text(randomNumber);
                 console.log("random number: " +randomNumber)
 
@@ -130,7 +130,7 @@ function winConditions() {
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
                 //fix call to randomRange Function
-                randomRange(min, max);
+                randomRange();
             }
 
     } else {
@@ -144,6 +144,7 @@ function winConditions() {
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
                 //call randomRange function here
+                randomRange();
             }else {
                 wins = 0
                 $("#wins").text(wins);
@@ -152,8 +153,9 @@ function winConditions() {
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
                 //fix call to randomRange Function
-                randomRange(min, max);
+                randomRange();
             }
+            
         }
     }
 };
