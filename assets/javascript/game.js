@@ -69,12 +69,7 @@ $("#blueCrystal").click(function() {
 })
 
 $("#purpleCrystal").click(function() {
-    //use this code in final draft:
-    // userNumber += purpleCrystalNumber;
-
-    //below is code to test loss conditions easily
-    userNumber = randomNumber + 1
-    
+    userNumber += purpleCrystalNumber;  
     $("#showUserNumber").text(userNumber);
     console.log("userNumber: " + userNumber);
     winConditions();
@@ -88,17 +83,10 @@ $("#rainbowCrystal").click(function() {
 })
 
 $("#clearCrystal").click(function() {
-    //use this code in the final draft:
-    // userNumber += clearCrystalNumber;
-
-
-    //below is code to test win conditions easily
-    userNumber = randomNumber;
-
+    userNumber += clearCrystalNumber;
     $("#showUserNumber").text(userNumber);
     console.log("userNumber: " + userNumber);
     winConditions();
-
 })
 
 
