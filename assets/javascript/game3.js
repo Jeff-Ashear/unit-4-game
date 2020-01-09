@@ -108,7 +108,7 @@ console.log("user number: " + userNumber);
 //setting up win conditions and a game loop
 function winConditions() {
     
-    if (userNumber = randomNumber) {
+    if (userNumber === randomNumber) {
         console.log("You Win!!");
         console.log("wins: " + wins);
         var againW = confirm("You win! Try again?");
