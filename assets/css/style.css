@@ -80,12 +80,14 @@ h3 {
 }
 
 .crystalButton {
-    border-style: solid;
+    border-style: ridge;
     border-width: 6px;
-    border-color: yellow;
+    border-color: rgb(0, 255, 0);
     /* height: 250px;
     width: 250px; */
     margin: 10px;
+    height: 130px;
+    width: 130px;
 }
 
 #userNumberField {
@@ -96,3 +98,25 @@ h3 {
     background-image: url("/assets/images/papyrus-dark.png");
     background-repeat: repeat;
 }
+
+@media screen and (max-width: 1500px) {
+    .crystalButton {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .crystalButton {
+        height: 100px;
+        width: 100px;
+        }
+}
+
+@media screen and (max-width: 760px) {
+    .crystalButton {
+        height: 120px;
+        width: 120px;
+    }
+}
+
