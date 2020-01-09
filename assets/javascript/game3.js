@@ -117,8 +117,6 @@ function winConditions() {
                 $("#wins").text(wins);
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
-                //fix call to randomRange Function
-                // randomRange();
                 randomNumber = randomRange(bottomRange, topRange);
                 randomRange();
                 $("#showRandomNumber").text(randomNumber);
@@ -132,7 +130,10 @@ function winConditions() {
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
                 //fix call to randomRange Function
+                randomNumber = randomRange(bottomRange, topRange);
                 randomRange();
+                $("#showRandomNumber").text(randomNumber);
+                console.log("random number: " + randomNumber)
             }
 
     } else {
@@ -145,8 +146,10 @@ function winConditions() {
                 $("#losses").text(losses);
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
-                //call randomRange function here
+                randomNumber = randomRange(bottomRange, topRange);
                 randomRange();
+                $("#showRandomNumber").text(randomNumber);
+                console.log("random number: " + randomNumber)
             }else {
                 wins = 0
                 $("#wins").text(wins);
@@ -154,8 +157,10 @@ function winConditions() {
                 $("#losses").text(losses);
                 userNumber = 0
                 $("#showUserNumber").text(userNumber);
-                //fix call to randomRange Function
+                randomNumber = randomRange(bottomRange, topRange);
                 randomRange();
+                $("#showRandomNumber").text(randomNumber);
+                console.log("random number: " + randomNumber)
             }
             
         }
