@@ -23,8 +23,16 @@ h2 {
     text-align: center;
 }
 
+#crystalMenuPrompt {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
 #cyrstalMenu {
     text-align: center;
+    padding: 10px;
+    margin: auto;
 }
 
 h3 {
@@ -60,7 +68,7 @@ h3 {
     color: red;
 }
 
-#crystalMenu {
+#crystalMenu, #crystalMenuPrompt {
     border-style: ridge;
     border-width: 16px;
     border-color: purple;
